@@ -30,16 +30,22 @@ Be sure to comment back in the code that initially hides the `typer-input` after
 
 To make the game function properly, you'll need to build out a timer that counts down to zero. While the timer runs, the user is able to type words, however when it reaches zero the game ends.
 
-The `countdown-button` already has an event listener attached to it. When the button is clicked, hide the button and make the countdown clock visible. Set the countdown clock to display 20 (the number of seconds our user has to type as many words as they can).
+The `countdown-button` already has an event listener attached to it. When the button is clicked you'll want to:
 
-Additionally, you'll want to start the countdown with an interval using `setInterval` (be sure to look it up if you're shaky on the syntax!). For every second that passes, lower the count by one / display the updated count to the user.
+- Hide the button and make the countdown clock visible
 
-When the interval reaches 0, clear the interval (or else it'll keep going ticking in the background!). Make the `countdown-button` visible again and the `typer-input` hidden. This way the user can't type anything else in but they're able to see all the words they've typed out!
+- Set the countdown clock to display 20 (the number of seconds our user has to type as many words as they can)
+
+- Start the countdown with an interval using `setInterval` (be sure to look it up if you're shaky on the syntax!)
+
+The interval has some special behavior depending on whether it's counted down to zero or not. For every second that passes, lower the count by one and display the updated count to the user.
+
+Once the interval reaches 0, first clear the interval or else it'll keep going ticking in the background! Make the `countdown-button` visible again and the `typer-input` hidden. This way the user can't type anything else in but they're able to start the game over again!
 
 ## Additional details
 
 There are a few other optimizations we can make. The first is we can make it so the user immediately gets focused on the `typer-input` field when the `countdown-button` gets clicked. Look up how to focus an input if you're unsure how to do that!
 
-Additionally, when we click the button we should clear out the `completed-words` list so the user starts fresh every time.
+Additionally, when we click the button we should clear out the `completed-words` list so the user starts over fresh.
 
 Beyond that, what other fun features or polish can you think to add?
