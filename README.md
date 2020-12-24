@@ -4,17 +4,17 @@ The purpose of this challenge is to build a game that challenges users to type a
 
 ## Getting Started
 
-Clone down the repository and open the codebase. You should also open the html file with your browser of choice.
+Fork and then clone down the repository. Open up the code and also use a browser to see what the `index.html` looks like.
 
-Take some time to understand the code that's already been written. If you need to, change the different variables to see what happens with them. There are notes in the code that should explain what different sections are meant to be.
+Take some time to understand the code that's already written. If you need to, change the different variables to see what happens with them. There are notes in the code that should explain what different sections are meant to be.
 
 ## Current Word Input
 
-When looking at the input field (which gets set to hidden when the script runs) we want to make it so that whenever it matches the current word, we add that word to the user's "score" and display a new word for the user to type.
+When looking at the `typer-input` field (which gets set to hidden when the script runs) we want to make it so that whenever its value matches the current word, we add that word to the user's "score" in `completed-words` and display a new word for the user to type in `word-display`.
 
-Comment out the line that makes the input hidden. You'll notice there's already an event listener attached that fires whenever we type something in. You can utilize this to check and see if the input matches the current word.
+Comment out the line that makes the `typer-input` hidden. You'll notice there's already an event listener attached to it which fires whenever we type something in. You can utilize this to check and see if the input matches the current word.
 
-Once the input matches, you'll want to do a few things:
+Whenever the input matches, you'll want to do a few things:
 
 - Add the word to the `completed-words` list
 
