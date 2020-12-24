@@ -1,0 +1,23 @@
+body {
+  background: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: solid white 5px;
+  margin: 3em;
+}
+
+* {
+  color: white;
+}
+
+button {
+  background: black;
+  margin: 2em;
+}
+
+input {
+  margin: 2em;
+}
