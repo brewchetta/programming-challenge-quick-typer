@@ -22,7 +22,7 @@ Whenever the input matches, you'll want to do a few things:
 
 - Clear the `typer-input` value
 
-- Change the `word-input` to display the new word
+- Change the `word-display` to display the new word
 
 Be sure to comment back in the code that initially hides the `typer-input` after you're satisfied that everything's working properly.
 
@@ -32,7 +32,9 @@ To make the game function properly, you'll need to build out a timer that counts
 
 The `countdown-button` already has an event listener attached to it. When the button is clicked you'll want to:
 
-- Hide the button and make the countdown clock visible
+- Hide the button and make the countdown clock and word input visible
+
+- Change the current word with the `newWord` function
 
 - Set the countdown clock to display 20 (the number of seconds our user has to type as many words as they can)
 
